@@ -12,7 +12,7 @@
         <form action="https://httpbin.org/post" method="POST">
             <div class="nameContainer">
                 <label for="name">Name:</label>
-                <input type="text" id="username" name="username"/>
+                <input type="text" id="username" name="username" required/>
                 <span id="userError" class="error-message" aria-live="polite"></span>
             </div>
 
@@ -27,20 +27,20 @@
 
             <fieldset class="villainContainer">
                 <legend>Best Die Hard Villain(s)?</legend>
-                <input type="radio" id="hans-gruber" name="hans-gruber" value="hans-gruber" />
+                <input type="radio" id="hans-gruber" name="hans-gruber" value="hans-gruber" required />
                 <label for="hans-gruber">Hans Gruber</label><br />
-                <input type="radio" id="simon-gruber" name="simon-gruber" value="simon-gruber" />
+                <input type="radio" id="simon-gruber" name="simon-gruber" value="simon-gruber" required/>
                 <label for="simon-gruber">Simon Gruber</label><br />
-                <input type="radio" id="colonel-stuart" name="colonel-stuart" value="colonel-stuart" />
+                <input type="radio" id="colonel-stuart" name="colonel-stuart" value="colonel-stuart" required/>
                 <label for="colonel-stuart">Colonel Stuart</label><br />
-                <input type="radio" id="thomas-gabriel" name="thomas-gabriel" value="thomas-gabriel" />
+                <input type="radio" id="thomas-gabriel" name="thomas-gabriel" value="thomas-gabriel" required/>
                 <label for="thomas-gabriel">Thomas Gabriel</label><br />
                 <span id="villainError" class="error-message" aria-live="polite"></span>
             </fieldset>
                     
             <div class="sidekickContainer">
                 <label for="sidekick">Who is your favourite sidekick?</label>
-                <select name="sidekick" id="sidekick">
+                <select name="sidekick" id="sidekick" required>
                     <option value="">Choose Here</option>
                     <option value="Sergeant Al Powell">Sergeant Al Powell</option>
                     <option value="Zeus Carver">Zeus Carver</option>
@@ -52,13 +52,13 @@
 
             <div class="fave-moment-container">
                 <label for="fave-moment">What is your favourite moment in the series?</label>
-                <textarea name="message" id="fave-moment" rows="2" cols="114"></textarea>
+                <textarea name="message" id="fave-moment" rows="2" cols="114" required></textarea>
                 <span id="faveMomentError" class="error-message" aria-live="polite"></span>
             </div>
 
             <div class="emailContainer">
                 <label for="email">Please enter your email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
                 <span id="emailError" class="error-message" aria-live="polite"></span>
             </div>
                  

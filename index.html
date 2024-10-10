@@ -7,7 +7,7 @@
     <title>Survey Form</title>
     </head>
     <body>
-        <h1>Is Die Hard a Christmas Movie?</h1>
+        <h1>Is <span class="italic">Die Hard</span> a Christmas Movie?</h1>
 
         <form action="https://httpbin.org/post" method="POST">
             <div class="nameContainer">
@@ -52,19 +52,19 @@
 
             <div class="fave-moment-container">
                 <label for="fave-moment">What is your favourite moment in the series?</label>
-                <textarea name="message" id="fave-moment" rows="5" cols="40"></textarea>
+                <textarea name="message" id="fave-moment" rows="2" cols="114"></textarea>
                 <span id="faveMomentError" class="error-message" aria-live="polite"></span>
             </div>
 
             <div class="emailContainer">
-                <label for="email">Please enter your email for a free blue-ray set of the Die Hard Trilogy</label>
+                <label for="email">Please enter your email:</label>
                 <input type="email" id="email" name="email">
                 <span id="emailError" class="error-message" aria-live="polite"></span>
             </div>
                  
             <div class="inputContainer">
-                <input type="submit" value="Submit">
-                <input type="reset" value="Reset Form">
+                <input type="submit" value="Submit" id="submit">
+                <input type="reset" value="Reset Form" id="reset">
             </div>
         </form>
     </body>

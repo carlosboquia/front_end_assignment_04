@@ -1,0 +1,210 @@
+body {
+    color: black;
+    font-size: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+h1 {
+    text-align: center; 
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.nameContainer {
+    padding-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nameContainer input {
+    max-width: 150rem;
+    height: 30px;
+    width: 53.2rem;
+    margin-top: 10px;
+    font-size: large;
+}
+
+legend {
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+label {
+    font-size: larger;
+}
+
+.villainContainer, .questionContainer {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 51.5rem;
+    align-content: center;    
+}
+
+.questionContainer input, .villainContainer input, .sidekickContainer select {
+    cursor: pointer;
+}
+
+.sidekickContainer {
+    padding-top:1rem;
+    padding-bottom: 20px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.sidekickContainer select {
+    max-width: 150rem;
+    height: 40px;
+    width: 53.9rem;
+    margin-top: 10px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.sidekickContainer label {
+    cursor: pointer;
+}
+
+.fave-moment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.fave-moment-container textarea {
+    margin-top: 10px;
+}
+.emailContainer {
+    padding-top:1rem;
+    padding-bottom: 10px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.emailContainer input {
+    max-width: 150rem;
+    height: 30px;
+    width: 53.2rem;
+    margin-top: 10px;
+    font-size: large;
+}
+
+.inputContainer {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+#submit {
+    background-color: white;
+    font-weight: 900;
+    width: auto;
+    min-width: 200px; 
+    height: 50px; 
+    padding: 5px;
+    margin: 0; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#reset {
+    background-color: white;
+    font-weight: 900;
+    width: auto;
+    min-width: 200px; 
+    height: 50px; 
+    padding: 5px;
+    margin: 0; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(59, 255, 59);
+}
+
+#reset:hover {
+    background-color: rgb(255, 45, 45);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 90%; 
+        padding: 0.5rem; 
+        margin: 0.5rem; 
+    }
+
+    .nameContainer input {
+        width: auto;
+        height: auto;
+    }
+
+    .sidekickContainer select {
+        width: 100%;
+        max-width: 100%;
+        height: 40px; 
+    }
+
+    .villainContainer{
+        width: auto;
+        height: auto;
+    }
+
+    .questionContainer{
+        width: auto;
+        height: auto;
+    }
+
+    .fave-moment-container textarea {
+        width: 100%;
+        max-width: 100%;
+        height: 100px; 
+    }
+
+    #submit, #reset {
+        min-width: 100%; 
+        font-size: 0.9rem; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .emailContainer{
+        width: 100%;
+        max-width: 100%;
+        display: block;        
+    }
+
+    .emailContainer input{
+        width: auto;
+        height: auto;
+    }
+    
+    #submit:hover {
+        background-color: rgb(59, 255, 59);
+    }
+    
+    #reset:hover {
+        background-color: rgb(255, 45, 45);
+    }
+}

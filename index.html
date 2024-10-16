@@ -9,38 +9,40 @@
     <body>
         <h1>Is <span class="italic">Die Hard</span> a Christmas Movie?</h1>
 
-        <form action="https://httpbin.org/post" method="POST">
+        <form id = "form" 
+            action="https://httpbin.org/post" 
+            method="POST">
             <div class="nameContainer">
                 <label for="name">Name:</label>
-                <input type="text" id="username" name="username" required/>
-                <span id="userError" class="error-message" aria-live="polite"></span>
+                <input type="text" id="name" name="nameParm"/>
+                <span id="nameError" class="error-message" aria-live="polite"></span>
             </div>
 
             <fieldset class="questionContainer">
                 <legend>Do you think Die Hard is a Christmas Movie?</legend>
-                <input type="checkbox" id="yes" name="yes" value="yes" />
+                <input type="radio" id="yes" name="question" value="yes" />
                 <label for="yes">Yes</label><br/>
-                <input type="checkbox" id="no" name="no" value="no" />
+                <input type="radio" id="no" name="question" value="no" />
                 <label for="no">No</label><br/>
                 <span id="questionError" class="error-message" aria-live="polite"></span>
             </fieldset>
 
             <fieldset class="villainContainer">
                 <legend>Best Die Hard Villain(s)?</legend>
-                <input type="radio" id="hans-gruber" name="hans-gruber" value="hans-gruber" required />
+                <input type="checkbox" id="hans-gruber" name="villain" value="hans-gruber"  />
                 <label for="hans-gruber">Hans Gruber</label><br />
-                <input type="radio" id="simon-gruber" name="simon-gruber" value="simon-gruber" required/>
+                <input type="checkbox" id="simon-gruber" name="villain" value="simon-gruber" />
                 <label for="simon-gruber">Simon Gruber</label><br />
-                <input type="radio" id="colonel-stuart" name="colonel-stuart" value="colonel-stuart" required/>
+                <input type="checkbox" id="colonel-stuart" name="villain" value="colonel-stuart" />
                 <label for="colonel-stuart">Colonel Stuart</label><br />
-                <input type="radio" id="thomas-gabriel" name="thomas-gabriel" value="thomas-gabriel" required/>
+                <input type="checkbox" id="thomas-gabriel" name="villain" value="thomas-gabriel" />
                 <label for="thomas-gabriel">Thomas Gabriel</label><br />
                 <span id="villainError" class="error-message" aria-live="polite"></span>
             </fieldset>
                     
             <div class="sidekickContainer">
                 <label for="sidekick">Who is your favourite sidekick?</label>
-                <select name="sidekick" id="sidekick" required>
+                <select name="sidekick" id="sidekick" >
                     <option value="">Choose Here</option>
                     <option value="Sergeant Al Powell">Sergeant Al Powell</option>
                     <option value="Zeus Carver">Zeus Carver</option>
@@ -52,13 +54,13 @@
 
             <div class="fave-moment-container">
                 <label for="fave-moment">What is your favourite moment in the series?</label>
-                <textarea name="message" id="fave-moment" rows="2" cols="114" required></textarea>
+                <textarea name="fave-moment" id="fave-moment" rows="2" cols="114" ></textarea>
                 <span id="faveMomentError" class="error-message" aria-live="polite"></span>
             </div>
 
             <div class="emailContainer">
                 <label for="email">Please enter your email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" >
                 <span id="emailError" class="error-message" aria-live="polite"></span>
             </div>
                  
@@ -67,5 +69,8 @@
                 <input type="reset" value="Reset Form" id="reset">
             </div>
         </form>
+        <script src="script.js"></script>
     </body>
 </html>
+
+

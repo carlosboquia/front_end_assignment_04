@@ -1,6 +1,5 @@
 const formNode = document.querySelector("#form")
 
-
 formNode.addEventListener("submit", (event) => {
     // prevents form from going through when clicking "submit"
     event.preventDefault();
@@ -11,8 +10,10 @@ formNode.addEventListener("submit", (event) => {
         node.textContent = "";
     });
     
+    // Validates form and captures inputs
     const validateObject = validateForm();
 
+    // displays corresponding error messages
     if (!validateObject["isValid"]) {
         const errorMessages = validateObject["errorMessages"];
         errorMessages.forEach(({field, message}) => { 
@@ -21,6 +22,7 @@ formNode.addEventListener("submit", (event) => {
     }
 });
 
+// A function to validate form inputs
 const validateForm = () => {
     const emailContainerNode = document.querySelector("#email")
     const nameContainerNode = document.querySelector("#name")
@@ -90,8 +92,15 @@ const validateForm = () => {
     };
 };
 
+// Returns error message on to form
 const displayErrorMessage = (field, message) => {
-    const errorTextNode = document.querySelector(`#${field}`); 
-    errorTextNode.textContent = message;
-    errorTextNode.classList.add("error-text");
+    const errorField = document.querySelector(`#${field}`);
+    
+    if (!errorField) {
+        return;
+    }
+
+    
+    errorField.textContent = message;
+    errorField.classList.add("error-text");
 };

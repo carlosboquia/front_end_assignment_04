@@ -100,7 +100,10 @@ const displayErrorMessage = (field, message) => {
         return;
     }
 
-    
     errorField.textContent = message;
     errorField.classList.add("error-text");
 };
+
+function resetAlert() {
+    confirm("Are you sure you want to reset your form?");
+}

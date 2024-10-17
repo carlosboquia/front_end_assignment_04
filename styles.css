@@ -7,14 +7,19 @@ body {
     margin: 1rem;
 }
 
+
 h1 {
     text-align: center; 
     font-size: xx-large;
     font-weight: bolder;
+
 }
 
 .italic {
     font-style: italic;
+    color: red;
+    font-weight:bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .nameContainer {
@@ -92,6 +97,7 @@ label {
 .fave-moment-container textarea {
     margin-top: 10px;
 }
+
 .emailContainer {
     padding-top:1rem;
     padding-bottom: 10px;
@@ -117,7 +123,7 @@ label {
 }
 
 #submit {
-    background-color: white;
+    background-color: lightgreen;
     font-weight: 900;
     width: auto;
     min-width: 200px; 
@@ -129,7 +135,7 @@ label {
 }
 
 #reset {
-    background-color: white;
+    background-color: rgb(241, 113, 113);
     font-weight: 900;
     width: auto;
     min-width: 200px; 
@@ -138,14 +144,22 @@ label {
     margin: 0; 
     font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 2rem;
 }
 
 #submit:hover {
-    background-color: rgb(59, 255, 59);
+    background-color: rgb(29, 255, 29);
 }
 
 #reset:hover {
     background-color: rgb(255, 45, 45);
+}
+
+.error-text {
+    color: red;
+    font-weight: bolder;
+    padding-top: 10px;
+
 }
 
 @media only screen and (max-width: 600px) {

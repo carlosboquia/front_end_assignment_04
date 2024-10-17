@@ -104,6 +104,7 @@ const displayErrorMessage = (field, message) => {
     errorField.classList.add("error-text");
 };
 
+// Pop up message to confirm reset form
 function resetAlert() {
     confirm("Are you sure you want to reset your form?");
 }

@@ -24,6 +24,6 @@ Regex generator
 - https://rows.com/tools/regex-generator
 
 
-how to validate radio buttons
+how to validate radio buttons and checkbox
 - https://www.quora.com/How-do-I-make-sure-only-one-radio-button-can-be-checked#:~:text=To%20avoid%20having%20multiple%20radio,)%20to%20be%20treated...
 

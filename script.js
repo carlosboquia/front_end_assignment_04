@@ -28,6 +28,7 @@ const validateForm = () => {
     const nameContainerNode = document.querySelector("#name")
     const questionYesNode = document.querySelector("#yes")
     const questionNoNode = document.querySelector("#no")
+    const questionIdkNode = document.querySelector("#idk")
     const hansNode = document.querySelector("#hans-gruber")
     const simonNode = document.querySelector("#simon-gruber")
     const colonelNode = document.querySelector("#colonel-stuart")
@@ -61,9 +62,9 @@ const validateForm = () => {
     }
 
     // Questioncontainer input
-
     if (questionYesNode.checked) {
     } else if(questionNoNode.checked) {
+    } else if(questionIdkNode.checked) {
     } else {
         isValid = false;
         errorMessages.push({field: "questionError", message: "You must select a button"});

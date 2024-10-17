@@ -18,6 +18,9 @@ https://stackoverflow.com/questions/31499185/two-different-styles-in-the-same-h1
 
 
 #JavaScript
+General form validation
+- https://www.w3schools.com/js/js_validation.asp
+
 Regex generator
 - Generate regex to check for email.
 - [a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}

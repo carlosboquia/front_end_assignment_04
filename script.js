@@ -1,30 +1,6 @@
 // Grabs form 
 const formNode = document.querySelector("#form")
 
-// event listener when clicking submit
-formNode.addEventListener("submit", (event) => {
-    
-    // prevents form from going through when clicking "submit"
-    event.preventDefault();
-
-    // clears error messages when inputted is correct
-    const errorMessageNodes = document.querySelectorAll(".error-message");
-    errorMessageNodes.forEach(node => {
-        node.textContent = "";
-    });
-    
-    // Validates form and captures inputs
-    const validateObject = validateForm();
-
-    // displays corresponding error messages
-    if (!validateObject["isValid"]) {
-        const errorMessages = validateObject["errorMessages"];
-        errorMessages.forEach(({field, message}) => { 
-            displayErrorMessage(field, message); 
-        });
-    }
-});
-
 // A function to validate form inputs
 function validateForm() {
     
@@ -131,6 +107,36 @@ function displayErrorMessage (field, message) {
     errorField.textContent = message;
     errorField.classList.add("error-text");
 };
+
+function clearErrors() {
+    // clears error messages when inputted is correct
+    const errorMessageNodes = document.querySelectorAll(".error-message");
+    errorMessageNodes.forEach(node => {
+        node.textContent = "";
+    });
+}
+
+// event listener when clicking submit
+formNode.addEventListener("submit", (event) => {
+    
+    // prevents form from going through when clicking "submit"
+    event.preventDefault();
+
+    // calls clearErrors function
+    clearErrors();
+
+    // Validates form and captures inputs
+    const validateObject = validateForm();
+
+    // displays corresponding error messages
+    if (!validateObject["isValid"]) {
+        const errorMessages = validateObject["errorMessages"];
+        errorMessages.forEach(({field, message}) => { 
+            displayErrorMessage(field, message); 
+        });
+    }
+});
+
 
 // Pop up message to confirm reset form
 function resetAlert() {
